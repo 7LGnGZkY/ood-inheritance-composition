@@ -11,14 +11,10 @@ class LibraryCatalogue {
     return !this.items.includes(item);
   }
   checkIn(item) {
-    if (this.isNotAvailable(item)) throw new Error("item is not available");
+    if (this.isNotAvailable(item)) throw new Error("Item unavailable");
     return item.checkIn();
   }
 
-  checkOut(item) {
-    if (this.isNotAvailable(item)) throw new Error("item is not available");
-    return item.checkOut();
-  }
-}
+
 
 module.exports = LibraryCatalogue;

@@ -8,9 +8,6 @@ class Author {
     return this.name;
   }
 
-  getNumber() {
-    return this.number;
-  }
-}
+
 
 module.exports = Author;
